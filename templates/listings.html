@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+{% block title %} bruh why no work cri {% endblock %}
+
+{% block body %}
+    <link type = "text/css" href="../static/css/styles.css" rel="stylesheet">
+    <h1 class="heading">main feed.</h1>
+    <div class="btn-group">
+          <a class = "button" href="/">Home</a>
+            <a class = "button" href="/appstart">Become a partner!</a>
+          <a class = "button" href="/restfeed">partner feed (haha)</a>
+          <a class = "button" href="/aboutus">About</a>
+          <a class = "button" href="/contactus">Contact Us</a>
+     </div>
+    {% if isRest %}
+    <form action="/addfeeditem/{{provider_id}}" method="get">
+        <input type="submit" value="Add a listing" class="btn" name="addlisting" id="additem">
+    </form>
+    {% endif %}
+
+    {% for card in listing_list %}
+    <div class = "card">
+        <h1>{{card.comp_name}}</h1>
+        <h2>{{card.mavail}} {{card.desc}}</h2>
+        {% if not isRest %}
+            <form action="{{url_for('connect')}}" method="post">
+                <input name="sid" hidden="true" value="{{shelter_id}}">
+                <input name="lid" hidden="true" value="{{card.id}}">
+                {% if card.claimed == -1 %}
+                <input type="submit" class="btn" value="connect!">
+                {% else %}
+                <input type="submit" class="btn-disabled" value="connected" disabled="true">
+                <p>reach us at {{card.phone}}</p>
+                {% endif %}
+            </form>
+        {% endif %}
+        {% if not card.claimed == -1%}
+            <p>ALREADY CLAIMED, THANK YOU FOR YOUR SUPPORT :D</p>
+        {% endif %}
+
+    </div>
+    {% endfor %}
+
+
+{% endblock %}

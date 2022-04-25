@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+{% block title %} bruh why no work cri {% endblock %}
+
+{% block body %}
+    <link type = "text/css" href="../static/css/styles.css" rel="stylesheet">
+    <h1 class="heading">sign up to donate leftovers!</h1>
+    <div class="btn-group">
+      <a class = "button" href="/">Home</a>
+    <a class = "button" href="/appstart">Become a partner!</a>
+      <a class = "button" href="/restfeed">partner feed (haha)</a>
+      <a class = "button" href="/aboutus">About</a>
+      <a class = "button" href="/contactus">Contact Us</a>
+  </div>
+    <div class="alignment">
+            <form action="{{url_for('insert')}}" method="post">
+                <input class="input" name="bname" placeholder="enter your business name">
+                <br>
+                <input class="input" name="email" placeholder="email">
+                <br>
+                <input class="input" name="phone" placeholder="phone #">
+                <br>
+                <input class="input" name="address" placeholder="address">
+                <br>
+                <input class="input" name="website" placeholder="website url">
+                <br>
+                <input type="submit" class="btn" value="sign me up!" id="submitbuttonforsignup">
+            </form>
+
+            <form action="{{url_for('insertshelter')}}" method="post">
+                <input class="input" name="sname" placeholder="enter your shelter name">
+                <br>
+                <input class="input" name="email" placeholder="email">
+                <br>
+                <input class="input" name="phone" placeholder="phone #">
+                <br>
+                <input class="input" name="address" placeholder="address">
+                <br>
+                <input class="input" name="website" placeholder="website url">
+                <br>
+                <input type="submit" class="btn" value="sign me up!" id="submitbuttonforsignup">
+            </form>
+    </div>
+
+{% endblock %}

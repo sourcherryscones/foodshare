@@ -1,0 +1,9 @@
+<form action="{{url_for('addlisting')}}" method="post">
+        <input name="bname" placeholder="number of available meals">
+        <input name="desc" placeholder="description">
+        <p>When writing descriptions, please be sure to include common allergy information and whether or not the meal contains meat, fish, eggs, etc.</p>
+        <input type="submit">
+    </form>
+
+
+    form for add listing stuff

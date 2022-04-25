@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&family=Nanum+Gothic:wght@400;800&display=swap');
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-group{
+    margin-bottom:30px;
+}
+
+.btn-group .button {
+/*   background-color: #A0BBA2;
+  border: 1px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px; */
+   border-radius: 4px;
+  background-color: #A0BBA2;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 13px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  display: inline-block;
+  font-family: 'Quicksand', monospace;
+  color: white;
+
+/*   background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left; */
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+h3 {
+    color:#a5c8cf;
+}
+
+.btn-group .button:hover {
+  background-color: #7c8f7e;
+}
+
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+
+}
+/*
+Arial (sans-serif)
+Verdana (sans-serif)
+Helvetica (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+Courier New (monospace)
+Brush Script MT (cursive)
+*/
+
+.heading{
+  color:#A0BBA2;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  font-family: 'JetBrains Mono', monospace;
+  font-size:5rem;
+
+  /*
+  <style>
+  .borderexample {
+   border-style:solid;
+   border-color:black;
+  }
+  </style>
+*/
+}
+
+.btn {
+  display: block;
+  background-color: #A0BBA2; /* Green */
+  border: 1px solid black;
+  color: white;
+  padding: 9px 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 7px #999;
+  width: 140px;
+  height: 60px;
+/*   float: right; */
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.btn-disabled {
+  display: block;
+  background-color: #dddddd; /* Green */
+  border: 1px solid black;
+  color: white;
+  padding: 9px 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 7px #999;
+  width: 140px;
+  height: 60px;
+/*   float: right; */
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.btn:hover {background-color: #7c8f7e}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.alignment{
+  display:flex;
+}
+
+img{
+  width:90px;
+  height:90px;
+}
+
+.card {
+  padding: 20px 20px;
+  background-color: #a5c8cf;
+  color: #fff;
+  border-radius: 5px;
+/*   float:right; */
+}
+
+.card h1, h2{
+    font-family:'Jetbrains Mono', monospace;
+}
+
+.card h1{
+    font-size:30px;
+}
+
+.lbl{
+  font-family: 'Quicksand', monospace;
+}
+
+.homeBody1{
+  text-align: center;
+  font-family: 'Quicksand', monospace;
+}
+
+.homeBody2{
+  text-align: left;
+  font-family: 'Quicksand', monospace;
+}
+
+.mySlides{
+  width:800px;
+  height:400px;
+}
+
+div.relative {
+  position: relative;
+  left: 400px;
+}
+
+div.relative1 {
+  position: relative;
+  left: 700px;
+  bottom: 330px;
+}
+
+.input{
+    font-size:30px;
+    width: 400px;
+    margin:20px;
+}
+
+#submitbuttonadditem{
+    margin-left:20px;
+}
+
+#submitbuttonforsignup{
+    margin-left:20px;
+}
+
+#additem{
+    width:190px;
+    margin-bottom:20px;
+}
+
+/* #partners{
+  color:green;
+} */
+.alignment{
+    display:flex;
+}
+
+.h4{
+  color:#A0BBA2;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  font-family: 'JetBrains Mono', monospace;
+  font-size:40px;
+}

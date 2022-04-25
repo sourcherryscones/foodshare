@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add a new listing</title>
+    <link type = "text/css" href="../static/css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <h3 class="heading">hello, {{provider_name}}! add an item:</h3>
+  <form action="{{url_for('postlisting')}}" method = "post">
+      <input name="uid" hidden="true" value="{{provider_id}}">
+    <input class="input" name="mavail" type="number" placeholder="number of meals available">
+      <br>
+    <input class="input" name="desc" type="text" placeholder="description">
+      <br>
+    <input type="submit" class="btn" id="submitbuttonadditem" value="add post!">
+  </form>
+</body>
+</html>
